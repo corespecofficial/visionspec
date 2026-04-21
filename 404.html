@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionspec | Page Not Found</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0A2472;
+            --accent: #1E6FE8;
+            --accent-light: rgba(30, 111, 232, 0.1);
+            --white: #FFFFFF;
+            --text-muted: #5A6E8A;
+            --heading: 'Sora', sans-serif;
+            --sans: 'Plus Jakarta Sans', sans-serif;
+            --ease: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background: linear-gradient(160deg, #F0FAF8 0%, #FFFFFF 55%, #F4F7FF 100%);
+            color: #0A1628;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+        }
+
+        .error-code {
+            font-family: var(--heading);
+            font-size: 10rem;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(125deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: var(--heading);
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 480px;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 34px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.35s var(--ease);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(30, 111, 232, 0.28);
+        }
+
+        .btn-ghost {
+            color: var(--primary);
+            border: 2px solid rgba(10, 36, 114, 0.15);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .logo {
+            position: absolute;
+            top: 32px;
+            left: 40px;
+            font-family: var(--heading);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span { color: var(--accent); }
+
+        @media (max-width: 600px) {
+            .error-code { font-size: 6rem; }
+            h1 { font-size: 1.5rem; }
+            .logo { position: static; margin-bottom: 40px; }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="standalone.html" class="logo">Visionspec<span>.</span></a>
+
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+
+    <div class="actions">
+        <a href="standalone.html" class="btn btn-primary">
+            <i class="fas fa-home"></i> Back to Home
+        </a>
+        <a href="contact.html" class="btn btn-ghost">
+            <i class="fas fa-envelope"></i> Contact Us
+        </a>
+    </div>
+</body>
+
+</html>

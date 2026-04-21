@@ -1,0 +1,23 @@
+# Vite / npm build artifacts (not needed for static site)
+node_modules/
+dist/
+package.json
+package-lock.json
+tsconfig.json
+src/
+
+# Old template/experimental files
+index.html
+standalone-2.html
+standalone-3.html
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
