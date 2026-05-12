@@ -8,9 +8,9 @@
     "theme_color": "#0A2472",
     "icons": [
         {
-            "src": "public/favicon.svg",
+            "src": "https://res.cloudinary.com/detsk6uql/image/upload/v1776776712/visionspec_logo_gsko49.png",
             "sizes": "any",
-            "type": "image/svg+xml"
+            "type": "image/png"
         }
     ]
 }

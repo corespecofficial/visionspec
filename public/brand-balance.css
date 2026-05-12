@@ -1,0 +1,129 @@
+:root {
+    --brand-red: #D71920;
+    --brand-red-soft: rgba(215, 25, 32, 0.08);
+    --brand-red-glow: rgba(215, 25, 32, 0.18);
+    --brand-balance-gradient: linear-gradient(
+        90deg,
+        var(--primary, #0A2472) 0%,
+        var(--accent, #1E6FE8) 68%,
+        var(--brand-red) 100%
+    );
+}
+
+.scroll-progress {
+    background: var(--brand-balance-gradient) !important;
+}
+
+.section-tag::before {
+    background: linear-gradient(90deg, var(--accent, #1E6FE8) 0%, var(--brand-red) 100%) !important;
+}
+
+.nav-links a.active,
+.footer-col a.footer-active {
+    border-color: var(--brand-red) !important;
+}
+
+.service-card,
+.feature-card,
+.value-card,
+.process-card,
+.role-card,
+.contact-card,
+.form-card,
+.hero-stat-card,
+.about-pillar,
+.contact-item,
+.stat-item {
+    position: relative;
+}
+
+.feature-card::before,
+.value-card::before,
+.process-card::before,
+.role-card::before,
+.hero-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    bottom: 22px;
+    left: 0;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: var(--accent, #1E6FE8);
+    opacity: 0;
+    transform: scaleY(0.45);
+    transform-origin: center;
+    transition: opacity 0.45s var(--ease, ease), transform 0.45s var(--ease, ease);
+    pointer-events: none;
+}
+
+.feature-card[data-reveal].visible::before,
+.value-card[data-reveal].visible::before,
+.process-card[data-reveal].visible::before,
+.role-card[data-reveal].visible::before,
+.hero-stat-card[data-reveal].visible::before,
+.feature-card.visible::before,
+.value-card.visible::before,
+.process-card.visible::before,
+.role-card.visible::before,
+.hero-stat-card.visible::before,
+.feature-card:hover::before,
+.value-card:hover::before,
+.process-card:hover::before,
+.role-card:hover::before,
+.hero-stat-card:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.service-card:nth-child(3n)::before,
+.feature-card:nth-child(3n)::before,
+.value-card:nth-child(3n)::before,
+.process-card:nth-child(3n)::before,
+.role-card:nth-child(3n)::before,
+.hero-stat-card:nth-child(3n)::before {
+    background: var(--brand-red) !important;
+}
+
+.feature-card:nth-child(3n),
+.value-card:nth-child(3n),
+.process-card:nth-child(3n),
+.role-card:nth-child(3n),
+.hero-stat-card:nth-child(3n) {
+    border-color: var(--brand-red-soft) !important;
+}
+
+.feature-card:nth-child(3n) .fc-icon,
+.value-card:nth-child(3n) .value-icon,
+.service-card:nth-child(3n) .service-icon,
+.process-card:nth-child(3n) .process-icon,
+.contact-item:nth-child(3n) .item-icon,
+.about-pillar:nth-child(3n) .pillar-icon,
+.hero-stat-card:nth-child(3n) .stat-icon {
+    background: var(--brand-red-soft) !important;
+    color: var(--brand-red) !important;
+}
+
+.feature-card:nth-child(3n):hover .fc-icon,
+.value-card:nth-child(3n):hover .value-icon,
+.service-card:nth-child(3n):hover .service-icon,
+.process-card:nth-child(3n):hover .process-icon,
+.contact-item:nth-child(3n):hover .item-icon,
+.about-pillar:nth-child(3n):hover .pillar-icon,
+.hero-stat-card:nth-child(3n):hover .stat-icon {
+    background: var(--brand-red) !important;
+    color: #fff !important;
+}
+
+.service-card:nth-child(3n) .service-link {
+    color: var(--brand-red);
+}
+
+.btn-primary:hover,
+.nav-cta:hover,
+.cta-banner .btn:hover,
+.btn-cta-white:hover {
+    box-shadow:
+        0 12px 30px var(--brand-red-glow),
+        0 12px 30px var(--accent-glow, rgba(30, 111, 232, 0.28)) !important;
+}
